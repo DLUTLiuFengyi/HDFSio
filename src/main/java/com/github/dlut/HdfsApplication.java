@@ -23,7 +23,7 @@ public class HdfsApplication {
      * @throws Exception
      */
     private FileSystem getFileSystem() throws Exception {
-        String hdfsUri = "hdfs://10.176.24.160:9820";
+        String hdfsUri = "hdfs://ip:9820";
         Configuration configuration = new Configuration();
         configuration.set("fs.defaultFS", hdfsUri);
         configuration.set("fs.hdfs.impl", DistributedFileSystem.class.getName());
